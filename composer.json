@@ -1,0 +1,38 @@
+{
+  "name": "webentwicklerat/record-events",
+  "description": "Triggers events for database records.",
+  "keywords": [
+    "typo3",
+    "triggers",
+    "events",
+    "database",
+    "records"
+  ],
+  "homepage": "https://github.com/WebentwicklerAt/typo3-record_events",
+  "type": "typo3-cms-extension",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Gernot Leitgab",
+      "homepage": "https://webentwickler.at"
+    }
+  ],
+  "require": {
+    "typo3/cms-core": "^11.5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "WebentwicklerAt\\RecordEvents\\": "Classes/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "record_events"
+    }
+  },
+  "scripts": {
+    "pack": [
+      "git archive -o ../record_events.zip HEAD"
+    ]
+  }
+}
