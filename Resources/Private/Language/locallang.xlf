@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="EXT:record_events/Resources/Private/Language/locallang.xlf" date="2023-06-18T09:59:31Z" product-name="record_events">
+        <header/>
+        <body>
+            <trans-unit id="config.tables.blacklist" resname="config.tables.blacklist">
+                <source>Comma-separated list of blacklisted tables ('*' is supported)</source>
+            </trans-unit>
+            <trans-unit id="config.tables.whitelist" resname="config.tables.whitelist">
+                <source>Comma-separated list of whitelisted tables ('*' is supported)</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

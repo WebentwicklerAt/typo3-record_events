@@ -1,0 +1,5 @@
+# cat=tables; type=string; label=LLL:EXT:record_events/Resources/Private/locallang.xlf:config.tables.blacklist
+blacklist = backend_*,be_*,fe_*,sys_*,tx_extensionmanager_domain_model_extension,tx_impexp_presets,tx_scheduler_task_group
+
+# cat=tables; type=string; label=LLL:EXT:record_events/Resources/Private/locallang.xlf:config.tables.whitelist
+whitelist = *

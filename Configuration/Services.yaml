@@ -1,0 +1,14 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  WebentwicklerAt\RecordEvents\:
+    resource: '../Classes/*'
+
+  WebentwicklerAt\RecordEvents\Command\MonitorEnablecolumnsCommand:
+    tags:
+      - name: console.command
+        command: 'recordevents:monitorenablecolumns'
+        description: 'Monitors for events based on enablecolumns.'
