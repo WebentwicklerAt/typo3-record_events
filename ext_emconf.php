@@ -1,4 +1,5 @@
 <?php
+
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Record events',
     'description' => 'Triggers events for database records.',
@@ -10,14 +11,14 @@ $EM_CONF[$_EXTKEY] = [
     'author_company' => 'Webentwickler.at',
     'constraints' => [
         'depends' => [
-            'typo3' => '11.5.0-11.5.99',
+            'typo3' => '13.4.0-13.4.99',
         ],
         'conflicts' => [],
         'suggests' => [],
     ],
     'autoload' => [
         'psr-4' => [
-            'WebentwicklerAt\\RecordEvents\\' => 'Classes'
-        ]
+            'WebentwicklerAt\\RecordEvents\\' => 'Classes',
+        ],
     ],
 ];

@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace WebentwicklerAt\RecordEvents\Service;
@@ -98,11 +99,11 @@ class Enablecolumns
         $whitelist = (string)$extensionConfiguration->get('record_events', 'whitelist');
         $whitelist = GeneralUtility::trimExplode(',', $whitelist, true);
 
-        $tableNames = array_filter($tableNames, function($table) use ($blacklist, $whitelist) {
-            return (
+        $tableNames = array_filter($tableNames, function ($table) use ($blacklist, $whitelist) {
+            return
                 !$this->inWildcardList($blacklist, $table)
                 && $this->inWildcardList($whitelist, $table)
-            );
+            ;
         });
 
         return $tableNames;
