@@ -52,7 +52,7 @@ class Enablecolumns
 
         $tableNames = $this->getMonitoredTableNames();
         foreach ($tableNames as $tableName) {
-            $starttimeFieldName = $GLOBALS['TCA'][$tableName]['ctrl']['enablecolumns']['starttime'];
+            $starttimeFieldName = $GLOBALS['TCA'][$tableName]['ctrl']['enablecolumns']['starttime'] ?? null;
             if ($starttimeFieldName) {
                 $recordUids = $this->getRecordUidsBetween($tableName, $starttimeFieldName, $start, $end);
                 if (count($recordUids)) {
@@ -62,7 +62,7 @@ class Enablecolumns
                 }
             }
 
-            $endtimeFieldName = $GLOBALS['TCA'][$tableName]['ctrl']['enablecolumns']['endtime'];
+            $endtimeFieldName = $GLOBALS['TCA'][$tableName]['ctrl']['enablecolumns']['endtime'] ?? null;
             if ($endtimeFieldName) {
                 $recordUids = $this->getRecordUidsBetween($tableName, $endtimeFieldName, $start, $end);
                 if (count($recordUids)) {
